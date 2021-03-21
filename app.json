@@ -1,0 +1,37 @@
+{
+    "name": "View Count Bot",
+    "description": "Telethon bot to add view counts to a message.",
+    "logo": "",
+    "keywords": [
+        "telegram",
+        "telethon",
+        "telegram-bot",
+        "botzhub"
+    ],
+    "repository": "https://github.com/xditya/ViewCountBot",
+    "website": "xditya.me",
+    "success_url": "https://t.me/BotzHub",
+    "env": {
+        "API_HASH": {
+            "description": "You API HASH from my.telegram.org",
+            "value": ""
+        },
+        "APP_ID": {
+            "description": "You API ID from my.telegram.org",
+            "value": ""
+        },
+        "BOT_TOKEN": {
+            "description": "Bot token, get it from @BotFather.",
+            "value": ""
+        },
+        "FRWD_CHANNEL": {
+            "description": "Add your bot to a channel and paste the Channel ID here.",
+            "value": ""
+        }
+    },
+    "buildpacks": [
+        {
+            "url": "heroku/python"
+        }
+    ]
+}
