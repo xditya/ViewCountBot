@@ -1,5 +1,5 @@
-# (c) 2021-22 < @xditya >
-# < @BotzHub >
+# (c) 2021-22 < @naviya2 >
+# < @New_ehi >
 
 import logging
 import asyncio
@@ -25,13 +25,13 @@ except:
 @BotzHub.on(events.NewMessage(pattern="/start", func=lambda e: e.is_private))
 async def _(event):
     ok = await BotzHub(GetFullUserRequest(event.sender_id))
-    await event.reply(f"Hello {ok.user.first_name}! \nI'm a view-counter bot.\nSend me a message and I'll attach a view count to it!",
+    await event.reply(f<b>"Hello {ok.user.first_name}👋 \nI'm Leo view counter bot.\nJust Send me a message and I'll attach a view count to it🙂</b>\n\n <b>Made By</b> : @naviya2 🇱🇰\n<b>Support Group</b> :@leosupportx 🇱🇰",
                     buttons=[
-                        [Button.url("Dev.", url="https://t.me/BotzHub"),
-                        Button.url("Repository", url="https://github.com/xditya/ViewCountBot")]
+                        [Button.url("Developer🧑‍💻.", url="https://t.me/naviya2"),
+                        Button.url("Update Channel🗣", url="https://t.me/naviya2")]
                     ])
 
-@BotzHub.on(events.NewMessage(incoming=True, func=lambda e: e.is_private))
+@new_ehi.on(events.NewMessage(incoming=True, func=lambda e: e.is_private))
 async def countit(event):
     if event.text.startswith('/'):
         return
@@ -39,5 +39,5 @@ async def countit(event):
     await x.forward_to(event.chat_id)
 
 print("Bot has started.")
-print("Do visit @BotzHub..")
-BotzHub.run_until_disconnected()
+print("Do visit @new_ehi..")
+new_ehi.run_until_disconnected()
