@@ -1,5 +1,5 @@
 {
-    "name": "View Count Bot",
+    "name": "Leo View Count Bot",
     "description": "Telethon bot to add view counts to a message.",
     "logo": "",
     "keywords": [
@@ -8,9 +8,9 @@
         "telegram-bot",
         "botzhub"
     ],
-    "repository": "https://github.com/xditya/ViewCountBot",
+    "repository": "https://github.com/Naviya2/ViewCountBot",
     "website": "xditya.me",
-    "success_url": "https://t.me/BotzHub",
+    "success_url": "https://t.me/new_ehi",
     "env": {
         "API_HASH": {
             "description": "You API HASH from my.telegram.org",
